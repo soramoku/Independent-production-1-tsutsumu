@@ -1,0 +1,1816 @@
+@charset "UTF-8";
+/** -----------------------------------------------
+共通
+------------------------------------------------**/
+body {
+	/*下記のCSSはご自身のデザインに合わせて書き換えてください。*/
+	font-family: "Noto Sans JP","Hind","Noto Sans","Futura",'Century Gothic', "游ゴシック","Verdana", 'Hiragino Kaku Gothic ProN', 'Yu Gothic', Meiryo, sans-serif;
+	font-weight: 400;
+}
+
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box
+}
+
+
+.pc-only {
+display: block;
+}
+
+.sp-only {
+display: none;
+}
+
+
+
+/** -----------------------------------------------
+共通テキスト
+------------------------------------------------**/
+
+
+
+h2.section_heading-ja{
+	font-family: "Noto Sans JP", serif;
+	color: #4e5a3a;
+	font-size: 24px;
+	font-weight: 600;
+	letter-spacing: 0.2em;
+	margin-top: 16px;
+	text-align: center;
+}
+
+.section_heading-en{
+	font-family: "Hind", serif;
+	font-weight: 600;
+	font-style: normal;
+	color: #4e5a3a;
+	font-size: 20px;
+	line-height: 1.6;
+	letter-spacing: 0.18em;
+	text-align: center;
+}
+
+
+h3.copy_title-text{
+	font-family: "Noto Sans JP", serif;
+	color: #3a3a3a;
+	font-size: 28px;
+	font-weight: 500;
+	letter-spacing: 0.15em;
+	margin-top: 64px;
+	text-align: center;
+
+}
+
+h4{
+	font-family: "Noto Sans JP", serif;
+	color:#4e5a3a;
+	font-size: 20px;
+	font-weight: 500;
+	letter-spacing: 0.2em;
+	text-align: left;
+	margin-bottom: 16px;
+
+}
+
+
+.medium{
+	font-family: "Noto Sans JP", serif;
+	color: #3a3a3a;
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 1.9;
+	letter-spacing: 0.15em;
+	margin-top: 48px;
+	text-align: center;
+}
+
+.small{
+	font-family: "Noto Sans JP", serif;
+	color:#3a3a3a;
+	font-size: 16px;
+	font-weight: 500px;
+	line-height: 1.5;
+	letter-spacing: 0.20em;
+	text-align: left;
+}
+
+
+/** -----------------------------------------------
+レイアウト
+------------------------------------------------**/
+
+
+#about, #member, #recruit, #faq{
+	padding: 120px 0px 144px 0px;
+} 
+
+#business{
+	padding: 100px 0px 128px 0px;
+} 
+
+#enviroment{
+	padding: 100px 0px 124px 0px;
+} 
+
+#personality{
+	padding: 120px 0px 152px 0px;
+} 
+
+#entry{
+	padding: 136px 0px 140px 0px;
+} 
+
+#footer{
+	padding: 122px 0px 96px 0px;
+} 
+
+
+.section-inner1 {
+	width: 100%; 
+	max-width: 1000px;	
+	margin: 0 auto;
+	overflow: hidden; 
+	}
+	
+.section-inner2 {
+	width: 100%; 
+	max-width: 950px;	
+	margin: 0 auto;
+	overflow: hidden; 
+	}
+	
+.section-inner3 {
+	width: 100%; 
+	max-width: 840px;	
+	margin: 0 auto;
+	overflow: hidden; 
+	}
+
+.section-inner4 {
+	width: 100%; 
+	max-width: 1200px;	
+	margin: 0 auto;
+	overflow: hidden; 
+	}
+
+
+	
+/** -----------------------------------------------
+ボタン
+------------------------------------------------**/
+
+	.button-main {
+		text-decoration: none;
+		text-align: center;
+		display:block;
+		padding: 38px 96px;
+		max-width: 400px;
+		width: calc(100vw - 40px);
+		height: auto;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
+		margin-top: 88px;
+		border: 5px solid #ff8907;
+		border-radius: 100px;
+		background-color: #ff8907;
+		color: #fff;
+		font-weight: 600;
+		font-size: 26px;
+		letter-spacing: 0.15em;
+		position: relative; 
+	}
+
+	.button-main::before {
+		content: ""; 
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		margin: auto 0;
+		right: 51px;
+		width: 15px;
+		height: 15px;
+    	border-top: 4px solid #ff8907;
+    	border-right: 4px solid #ff8907;
+		transform: rotate(45deg); 
+		display: inline-block; 
+		justify-content: center;
+		align-items: center;
+		z-index: 100;
+	}
+	
+	.button-main::after {
+		content: ""; 
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: 40px;
+		width: 34px;
+		height: 34px;
+		border-radius: 50%; 
+		background-color: #fff; 
+		display: inline-block; 
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.button-main:hover {
+		color: #ef7900;
+		border: 5px solid #ef7900;;
+		background-color: #fff;
+	}
+
+	.button-main-small {
+		text-decoration: none;
+		text-align: center;
+		display:block;
+		padding: 14px;
+		max-width: 182px;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+		border: none;
+		border-radius: 100px;
+		background-color: #ff8907;
+		color: #fff;
+		font-weight: 600;
+		font-size: 16px;
+		letter-spacing: 0.16em;
+		position: relative; 
+	}
+
+	.button-main-small:hover {
+		color: #ef7900;
+		border: 1px solid #ef7900;;
+		background-color: #fff;
+	}
+
+
+
+	.button-2 {
+		text-decoration: none;
+		text-align: center;
+		display:block;
+		width: fit-content;
+		padding: 16px 30px;
+		margin: 0 auto;
+		background-color: #fff;
+		color: #3a3a3a;
+		font-size: 16px;
+		font-weight: 400;
+		letter-spacing: 0.15em;
+		border-radius: 5px;
+		text-align: center;
+		margin-top: 32px;
+		align-items: center;
+		border: 1px solid #707070;
+		}
+
+	
+	.button_button-2 a:before {
+		position: absolute;
+		bottom: 0px;
+		left: 50%;
+		content: '';
+		width: 100%;
+		height: 2px;
+		background: rgba(0,0,0,.1);
+		transform: translateX(-50%);
+	}
+	.button_button-2 a:after {
+		position: absolute;
+		bottom: 0px;
+		left: 0;
+		content: '';
+		width: 100%;
+		height: 2px;
+		background: #000;
+		transform: scale(0, 1);
+		transform-origin: left top;
+		transition: transform .3s;
+	}
+	.button_button-2 a:hover {
+		opacity: 0.7;
+	}
+	.button_button-2 a:hover:after {
+		transform: scale(1, 1);
+	}
+
+
+
+	.header-logo {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.header-logo img {
+		width: 150px;
+		height: auto;
+		margin-bottom: 0;
+		}
+		
+	.site-name {
+		display: block;
+		font-size: 14px;
+		font-weight: 400;
+		color: #3a3a3a;
+		text-align: center;
+		padding-bottom: 7%;
+	}
+
+	.header-logo a{
+	text-decoration: none;
+	}
+
+	#header {
+	background-color: #FFFFFF;
+	width: 100%;
+	height: 104px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 100px;
+	padding-right: 60px;
+	padding-top: 5px;
+	position: fixed;
+	top: 0;
+	z-index: 900;
+	box-sizing: border-box;
+	}
+
+
+	.gnav-pc-wrap {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	}
+
+	ul.gnave-pc {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	}
+
+	ul.gnave-pc li {
+	margin-left: 40px;
+	text-align: center;
+	}
+
+	ul.gnave-pc li a {
+	text-decoration: none;
+	color: #4e5a3a;
+	}
+
+
+	.gnav__txt-en,
+	.gnav__txt-ja {
+	display: inline-block;
+	text-align: center;
+	}
+
+	.gnav__txt-en {
+	font-family: 'Hind', sans-serif;
+	font-weight: 500;
+	font-size: 13px;
+	letter-spacing: 0.1em;
+	}
+
+	.gnav__txt-ja {
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 500;
+	font-size: 10px;
+	letter-spacing: 0.05em;
+	margin-top: 4px;
+	}
+
+	.button-main-small {
+	background-color: #ff8907;
+	color: #fff;
+	font-weight: 600;
+	font-size: 16px;
+	padding: 10px 20px;
+	border-radius: 100px;
+	text-decoration: none;
+	margin-left: 40px	
+	}
+
+	#header .pc-only{
+		padding: 1%;
+	}
+
+	/* ホバー時のエフェクト */
+	ul.gnave-pc li a:hover {
+		opacity: 0.5;
+	}
+
+	.gnav-sp-wrap{
+		display: none;
+	}
+
+
+	#menu-button {
+		display: none;
+	}
+
+	.pc-only{
+		display: block;
+	}
+	.sp-only{
+		display: none;
+	}
+
+#mainvisual{
+	width: 100vw;
+	height: calc(100vh - 104px);
+	background-image: url("../images/mainvisual_PC.jpg");
+	background-size: cover;
+	background-position: center;
+	object-fit: contain;
+	background-repeat: no-repeat;
+	position: relative;
+	margin-top: 104px;
+} 
+
+.maincopy {
+	font-family: "Noto Sans JP", serif;
+	color:#4e5a3a;
+	font-size: 43px;
+	font-weight: 600px;
+	line-height: 1.7;
+	letter-spacing: 0.24em;
+	text-align: left;
+	position: absolute;
+	left: 310px;
+	bottom: 72px;
+	
+}
+
+/** -----------------------------------
+    私たちについて
+-------------------------------------**/
+.background-image {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-image: url(../images/about_right.png), url(../images/about_lleft.png);
+    background-position: right -5% top 0, left -8% bottom 0;
+    background-size: 25%,13%;
+    background-repeat: no-repeat, no-repeat;
+    background-color: #fff;
+}
+
+#about p.large{
+	font-family: "Noto Sans", sans-serif;
+	color: #3a3a3a;
+	font-size: 22px;
+	font-weight: 500px;
+	line-height: 1.36;
+	letter-spacing: 0.15em;
+	margin-top: 40px;
+	text-align: center;
+}
+
+#about p.medium{
+	font-weight: 500px;
+	line-height: 2.0;
+	letter-spacing: 0.15em;
+	text-align: left;
+	margin: 0;
+}
+
+
+
+#about p.large::before{
+	content: "";
+	width: 1px;
+	height: 40px;
+	display: block;
+	content: "";
+    background-color: #000;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+
+.col-2{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 56px;
+	text-align: center;
+}
+
+.col-2 .item {
+	width: calc((100% - 80px)/2);
+	}
+	
+#about .item img{
+	max-width: 460px;
+	object-fit: contain;
+	border-radius: 20px;
+}
+
+.slider-pc{
+	margin-top: 38px;
+	margin-bottom: 68px;
+	align-items: center;
+}
+
+.autoplay{
+	max-width: 1000px;
+	}
+
+.autoplay img {
+	width: 320px; 
+	margin: auto;
+	object-fit: cover;
+	margin: 0px 11px ;
+	border-radius:20px ;
+	}
+
+
+.autoplay slick-initialized slick-slider slick-dotted slick-prev ::before{
+	z-index: 10;
+	color: #3a3a3a;
+	left: 0px;
+}
+
+
+.buttons {
+	display: flex;
+	justify-content: center;
+}
+
+.buttons .button {
+	margin: 8px;
+	border: 1px solid #000;
+	color: #000;
+	padding: 8px;
+	text-align: center;
+	width: 8em;
+	transition: all 300ms ease;
+}
+
+.buttons .button:hover {
+cursor: pointer;
+background-color: #000;
+color: #fff;
+transition: all 300ms ease;
+}
+
+#menu-button {
+	display: none;
+}
+
+
+/** -----------------------------------
+    事業について
+-------------------------------------**/
+#business{
+	background-color: #efe2cc;
+} 
+
+.business-wrapper-inner-description{
+	padding : 24px 5px 0px 5px;
+}
+
+
+#bussiness_items{
+	width: 320px;
+	border-radius:20px 0px 0px 20px ;
+	object-fit: cover;
+	}
+
+
+#business p.business{
+	font-family: "Noto Sans JP", serif;
+	color:#3a3a3a;
+	font-size: 16px;
+	font-weight: 400px;
+	line-height: 1.9;
+	letter-spacing: 0.15em;
+	text-align: left;
+}
+
+
+#business .content-item {
+	max-width: 950px;
+	max-height: 200px;
+	background: #FFFFFFCC;
+	box-shadow: 5px 0px 5px #80786b40;
+	border-radius:20px 0px 0px 20px ;
+	display: flex;
+	align-items: center;
+	margin-top: 32px;
+	position: relative;
+	list-style: none;
+	}
+
+#business.small{
+	line-height: 1.9;
+}
+
+
+.content-item img{
+	max-width: 320px;
+	object-fit: cover;
+	border-radius:20px 0px 0px 20px ;
+	vertical-align: bottom;
+}
+
+#business .text {
+    padding: 4%;
+}
+
+
+/** -----------------------------------
+メンバーについて
+-------------------------------------**/
+
+.job {
+	font-family: "Noto Sans JP", serif;
+	color:#3a3a3a;
+	font-size: 14px;
+	font-weight: 500px;
+	line-height: 1.7;
+	letter-spacing: 0.20em;
+	text-align: left;
+	margin-bottom: 8px;
+}
+
+.col-4 {
+display: flex;
+justify-content: space-between;
+margin: 56px 0px 32px 0px;
+padding : 0px 5px;
+}
+.col-4 .item {
+width: calc((100% - 108px)/4);
+}
+
+
+.card {
+	height: 100%;
+	background-color: #fff;
+	border: 0.5px solid;
+	border-color:  #80786b80;
+	border-radius: 10px 10px 0px 0px;
+	box-shadow: 4px 0px 4px #80786b40;	
+}
+
+.card-img img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.card .card-text {
+	padding: 13px 11px 14px 12px;
+}
+
+
+
+
+
+
+/** -----------------------------------
+    働く環境について
+-------------------------------------**/
+#enviroment{
+	background-color: #efe2cc;
+} 
+
+#enviroment p.section-message{
+	font-family: "Noto Sans JP", serif;
+	color: #3a3a3a;
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 1.9;
+	letter-spacing: 0.15em;
+	margin-top: 68x;
+	text-align: center;
+
+}
+
+.col-3 {
+	display: flex;
+	justify-content: space-between;
+	margin: 56px 0px 40px 0px;
+	text-align: center;
+}
+.col-3 .item {
+	height: 100%;
+	width: calc((100% - 210px)/3);
+}
+
+#enviroment p.small{
+	text-align: center;
+}
+
+#enviroment .button-2 {
+	margin-top: 40px ;
+}
+
+/** -----------------------------------
+    求める人物像
+-------------------------------------**/
+
+#personality.col-2{
+display: flex;
+justify-content: space-between;
+margin: 56px 0px 152px 0px;
+align-items:center
+}
+
+.col-2 .personality-item{
+	justify-content: space-between;
+	width: calc((100% - 60px)/2);
+	align-items:center;
+	}
+
+
+.personality-item img{
+width: 100%;
+text-align: center;
+}
+
+.personality-item text{
+	width: 100%;
+}
+.person_text p.small{
+text-align: left;
+margin-bottom: 28px;
+}
+
+.personality-wrapper-inner-description{
+margin-bottom: 152px;
+}
+
+li.responsibility h4 {
+	color: #ff8907;
+    margin-bottom: 4px;
+}
+
+li.respect h4 {
+	color: #81b028;
+	margin-bottom: 4px;
+}  
+
+li.empathy h4 {
+	color: #ddae9f;
+	margin-bottom: 4px;
+}
+
+.empathy p.small{
+	margin-bottom: 0px;
+}
+
+li.responsibility, li.respect, li.empathy {
+	list-style: none; 
+}
+
+/** -----------------------------------
+    募集職種
+-------------------------------------**/
+#recruit{
+	background-color: #efe2cc;
+} 
+
+#recruit .col-2{
+	margin-bottom: 44px;
+}
+
+#recruit .medium{
+	text-align: left;
+}
+
+#recruit .content{
+	font-family: "Noto Sans JP", serif;
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 1.9;
+	letter-spacing: 0.15em;
+	text-align: center;
+	margin: 44px 0px 32px 0px;
+}
+
+
+.col-2 .recruit_item{
+	justify-content: space-between;
+	width: calc((100% - 58px)/2);
+	align-items:center
+	}
+
+.recruit_item img{
+	width: 392px;
+	height: auto;
+	border-radius:20px;
+	object-fit: contain;
+	}
+
+
+#recruit ul li{
+	font-size: 16px;
+	border-left: solid 6px #81b028;
+	background-color: #fff;
+	max-width:  720px;
+	width:100%;
+	height: 53px;
+	margin:0 auto;
+	margin-bottom: 24px;/*下のバーとの余白*/
+	line-height: 1.5;
+	border-radius: 0 15px 15px 0;/*右側の角だけ丸く*/
+	padding: 13.5px 0px 13.5px 16px;
+	list-style: none;
+	}
+#recruit a {
+	text-decoration: none;
+	color: #3a3a3a;
+}
+	
+
+/** -----------------------------------
+    よくある質問
+-------------------------------------**/
+.div{margin-bottom: 144px;}
+
+#faq .section_heading-ja {
+	margin-bottom: 72px;
+}
+
+.accordion {
+	max-width: 100%;
+	margin-top: 32px;
+	box-shadow: 0px 0px 9px 0px #374b1166;
+	background-color: #fff;
+	text-align: left;
+}
+
+.accordion summary {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	padding: 1em 2em;
+	cursor: pointer;
+	background-color: #81b02880;
+}
+
+.accordion summary::-webkit-details-marker {
+	display: none;
+}
+
+.accordion summary::before,
+.accordion summary::after {
+	width: 3px;
+	height: 0.9em;
+	border-radius: 5px;
+	background-color: #333333b3;
+	content: '';
+}
+
+.accordion summary::before {
+	position: absolute;
+	right: 2em;
+	rotate: 90deg;
+}
+
+.accordion summary::after {
+	transition: rotate 0.3s;
+}
+
+.accordion[open] summary::after {
+	rotate: 90deg;
+}
+
+.accordion p.small {
+	transform: translateY(-10px);
+	opacity: 0;
+	margin: 0;
+	padding: 0.3em 2em 1.5em;
+	transition: transform 0.5s, opacity 0.5s;
+	line-height: 2.0;
+	letter-spacing: 0.15em;
+}
+
+.accordion[open] p.small {
+	transform: none;
+	opacity: 1;
+}
+
+#faq .button-2 {
+	margin-top: 48px ;
+}
+
+/** -----------------------------------
+entry
+-------------------------------------**/
+#entry {
+	padding: 136px 300px 140px 300px;
+	width: 100vw;
+	background-image: url(../images/entry_img.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+#entry .message{
+	font-family: "Noto Sans JP", serif;
+	color: #fff;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 1.8;
+	letter-spacing: 0.19em;
+	text-align: center;
+}
+
+#entry p.message span {
+    display: block;
+}
+
+
+
+/** -----------------------------------
+フッター
+-------------------------------------**/
+#footer{
+	background-color: #efe2cc;
+	text-align: center;
+}
+
+#footer a {
+	font-size: 14px;
+	text-decoration: none;
+	color: #4e5a3a;
+	letter-spacing: 0.14em;
+}
+
+.copyright {
+	font-size: 13px;
+	color: #4e5a3a;
+	letter-spacing: 0.15em;
+	text-align: center;
+}
+
+.footer-link {
+	margin-bottom: 122px ;
+	margin-bottom: 122px;
+}
+
+.footer-link li {
+	display: flex;
+	margin-right: 32px;
+}
+
+.footer-link li {
+	padding-left: 32px;
+	display: inline; 
+	border-left: 1px solid #4e5a3a; 
+}
+
+li:first-child {
+	border: none; 
+}
+
+
+
+/** -----------------------------------------------
+PC :  画面の横幅が641px以上
+------------------------------------------------**/
+
+.example {
+	font-size: 50px;
+	color: #99293D;
+}
+
+
+
+
+/*ここからメディアクエリで各デバイスサイズに書き分けます。
+今回の課題で考慮するのはPCとスマホのみでOKですが、タブレットサイズでのスタイルを書いてもOK！
+また、CSSは上から下に継承されるので、変化させたいところだけ書けばOKです*/
+
+
+/** -----------------------------------------------
+Smartphone :  画面の横幅が640pxまで
+------------------------------------------------**/
+@media screen and (max-width:800px){
+	.example {
+		font-size: 20px;
+		color: #AD8651;
+	}
+}
+
+ /* スマホ向けのレスポンシブ対応 */
+
+/** -------- スマホ -------- **/
+@media screen and (max-width: 800px) {
+	
+	.section-inner1,.section-inner2,.section-inner3,.section-inner4{
+		width: 100%; 
+		max-width: 80%;
+		margin: 0 auto;
+		overflow: hidden; 
+		}
+
+	
+	#about{
+	padding-top: 26%;
+	padding-bottom: 30%;
+	}
+
+	#business, #enviroment, #recruit{
+	padding-top: 21.4%;
+	padding-bottom: 17%;
+	}
+
+	#member{
+	padding-top: 22%;
+	padding-bottom: 17%;
+	}
+
+	#personality{
+	padding-top: 22%;
+	padding-bottom: 23.5%;
+	}
+
+	#faq {
+	padding-top: 23.5%;
+	padding-bottom: 25.6%;
+	}
+
+}
+
+/** -----------------------------------
+レイアウト
+-------------------------------------**/
+
+@media screen and (max-width: 800px) {
+	.col-2 {
+    display: block;
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+	}
+
+	.col-2 .item {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	}
+
+	.col-3 {
+    display: block;
+	}
+
+	.col-3 .item {
+    width: 100%;
+	margin: auto;
+	margin-top: 11%;
+	padding: 5%;
+	}
+
+	.col-4 {
+    display: block;
+	}
+	.col-4 .item {
+    width: 56%;
+	margin: 0,auto;
+	padding: 0 15%;
+	}
+
+}
+
+
+/** -----------------------------------
+テキスト
+-------------------------------------**/
+@media screen and (max-width: 800px) {
+h2.section_heading-ja{
+	font-size: 20px;
+	font-weight: 600;
+	margin-top: 12px;
+}
+
+.section_heading-en{
+	font-size: 18px;
+	letter-spacing: 0.18em;
+}
+
+
+h3.copy_title-text{
+	font-size: 22px;
+	letter-spacing: 0.20em;
+	margin-top: 64px;
+	text-align: center;
+	margin: 0, auto;
+}
+
+h3.copy_title-text span{
+	display: block;
+}
+
+
+h4{
+	font-size: 16px;
+	letter-spacing: 0.2em;
+	text-align: left;
+	margin-bottom: 20px;
+}
+
+
+.medium{
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 2.0;
+	letter-spacing: 0.15em;
+	margin-top: 11%;
+	text-align: center;
+}
+
+.small{
+	font-family: "Noto Sans JP", serif;
+	color:#3a3a3a;
+	font-size: 16px;
+	font-weight: 500px;
+	line-height: 1.5;
+	letter-spacing: 0.20em;
+	text-align: left;
+}
+}
+
+@media screen and (max-width: 500px) {
+
+.medium{
+	text-align: left;
+}
+}
+
+
+
+/** -----------------------------------
+メニューバー
+-------------------------------------**/
+
+@media screen and (max-width: 800px) {
+	.header-logo {
+		flex-direction: column;
+		align-items: center;
+	}
+	.header-logo img {
+		width: 120px;
+		height: auto;
+		margin-bottom: 0;
+		}
+		
+	.site-name {
+		display: block;
+		font-size: 10px;
+		color: #333;
+		text-align: center;
+		padding-bottom: 15%;
+	}
+
+	.header-logo a{
+	text-decoration: none;
+	}
+
+	#header {
+	height: 85px;
+	padding: 0;
+	z-index: 800;
+	}
+
+	#header h1 {
+	margin-left: 20px;
+    width: 60%;
+    padding-left: 20px;
+	}
+
+	.gnav-pc-wrap {
+    display: none;
+	}
+
+	#menu-button {
+	display: block;
+	width: 60px;
+	height: 60px;
+	margin-right: 30px;
+	padding: 2%;
+	}
+
+	.menu-button-inner {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+	}
+
+	.menu-button-inner span {
+	display: block;
+	width: 100%;
+	height: 2px;
+	background-color: #4e5a3a;
+	position: absolute;
+	}
+
+	.menu-button-inner span:nth-child(1) {
+	top: 0;
+	}
+
+	.menu-button-inner span:nth-child(2) {
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	}
+
+	.menu-button-inner span:nth-child(3) {
+	bottom: 0;
+	}
+
+	#header .pc-only{
+	display: none;
+	}
+
+	
+  /* スマホ用メニューのスタイル */
+	.gnav-sp-wrap {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: #FFFFFFCC;
+    position: fixed;
+    z-index: 100;
+	}
+
+
+	ul.gnav-sp li {
+    text-align: center;
+    margin-bottom: 30px;
+	}
+
+	ul.gnav-sp li a {
+    font-family: "Noto Sans JP", serif;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    color: #4e5a3a;
+    font-weight: bold;
+	text-decoration: none;
+	}
+
+	.navbar-nav {
+		display: block !important;
+	}
+	
+
+	.fix-btn{
+	position:fixed;
+	z-index:40;
+	background:#ff8907;
+	width: 35%;
+	border-radius:45px;
+	text-decoration:none;
+	font-size:14px;
+	font-weight: 600;
+	text-align:center;
+	color:#fff;
+	padding:20px 0;
+	right:20px;
+	bottom:20px;
+	box-shadow:1px 1px 5px #aaa;
+	}
+
+	.button-main {
+		text-decoration: none;
+		text-align: center;
+		display:block;
+		padding: 5% 0%;
+		width: calc(100vw - 40px);
+		height: auto;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
+		margin-top: 5%;
+		margin-bottom: 24%;
+		border: 5px solid #ff8907;
+		border-radius: 100px;
+		background-color: #ff8907;
+		color: #fff;
+		font-weight: 600;
+		font-size: 20px;
+		letter-spacing: 0.15em;
+		position: relative; 
+	}
+
+	.button-main::before {
+		content: ""; 
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		margin: auto 0;
+		right: 51px;
+		width: 15px;
+		height: 15px;
+    	border-top: 4px solid #ff8907;
+    	border-right: 4px solid #ff8907;
+		transform: rotate(45deg); 
+		display: inline-block; 
+		justify-content: center;
+		align-items: center;
+		z-index: 100;
+	}
+	
+	.button-main::after {
+		content: ""; 
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: 40px;
+		width: 34px;
+		height: 34px;
+		border-radius: 50%; 
+		background-color: #fff; 
+		display: inline-block; 
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.button-main:hover {
+		color: #ef7900;
+		border: 5px solid #ef7900;
+		background-color: #fff;
+	}
+
+	.button-main-small {
+		text-decoration: none;
+		text-align: center;
+		display:block;
+		padding: 14px;
+		max-width: 182px;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+		border: none;
+		border-radius: 100px;
+		background-color: #ff8907;
+		color: #fff;
+		font-weight: 600;
+		font-size: 16px;
+		letter-spacing: 0.16em;
+		position: relative; 
+		margin: 0 auto;
+	}
+
+
+}
+
+@media screen and (max-width: 500px) {
+	.button-main {
+		text-decoration: none;
+		text-align: center;
+		display:block;
+		padding: 5% 0%;
+		max-width: 300px;
+		width: calc(100vw - 40px);
+		height: auto;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
+		margin-top: 11%;
+		margin-bottom: 24%;
+		border: none;
+		border-radius: 100px;
+		background-color: #ff8907;
+		color: #fff;
+		font-weight: 600;
+		font-size: 18px;
+		letter-spacing: 0.15em;
+		position: relative; 
+	}
+
+
+
+	.button-2 {
+		text-decoration: none;
+		text-align: center;
+		display:block;
+		width: fit-content;
+		padding: 4.2% 8.3%;
+		margin: 0 auto;
+		background-color: #fff;
+		color: #3a3a3a;
+		font-size: 14px;
+		font-weight: 400;
+		letter-spacing: 0.15em;
+		border-radius: 5px;
+		text-align: center;
+		margin-top: 32px;
+		align-items: center;
+		border: 1px solid #707070;
+		}
+
+	.button-2 span{
+		display: block;
+	}
+	
+	.button_button-2 a:before {
+		position: absolute;
+		bottom: 0px;
+		left: 50%;
+		content: '';
+		width: 100%;
+		height: 2px;
+		background: rgba(0,0,0,.1);
+		transform: translateX(-50%);
+	}
+	.button_button-2 a:after {
+		position: absolute;
+		bottom: 0px;
+		left: 0;
+		content: '';
+		width: 100%;
+		height: 2px;
+		background: #000;
+		transform: scale(0, 1);
+		transform-origin: left top;
+		transition: transform .3s;
+	}
+	.button_button-2 a:hover {
+		opacity: 0.7;
+	}
+	.button_button-2 a:hover:after {
+		transform: scale(1, 1);
+	}
+
+}
+
+
+
+
+
+/** -------- スマホ -------- **/
+@media screen and (max-width: 800px) {
+#mainvisual {
+    width: 100vw;
+    height:  100vh;
+    background-image: url(../images/mainvisual_SP.jpg);
+	background-size: cover;
+	background-position: center;
+	object-fit: contain;
+	background-repeat: no-repeat;
+    margin-top: 85px;
+}
+
+.maincopy {
+	font-size: 30px;
+	font-weight: 600px;
+	line-height: 1.8;
+	letter-spacing: 0.15em;
+	text-align: left;
+	position: absolute;
+	left: 10%;
+	bottom: 14%;
+}
+}
+
+@media screen and (max-width: 500px) {
+	.maincopy {
+	font-size: 21px;
+	letter-spacing: 0.1em;
+	}	
+}
+
+
+@media screen and (max-width: 800px) {
+	
+#about .item {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+
+#about .item img{
+	width: 100%;
+	max-width: 100vw;
+	border-radius: 20px;
+	margin-top: 15%;
+	object-fit: contain;
+}
+
+
+#about p.large{
+	font-family: "Noto Sans", sans-serif;
+	font-size: 18px;
+	line-height: 1.6;
+	letter-spacing: 0.15em;
+	margin-top: 40px;	
+	text-align: center;
+}
+
+#about p.large span{
+	display: block;
+}
+#about p.medium{
+	padding-top: 11%;
+	margin: 0;
+	padding-left: 0;
+}
+
+.pc-only{
+	display: none;
+}
+.sp-only{
+	display: block;
+}
+
+
+.slider-sp{
+	margin-top: 8%;
+	margin-bottom: 12%;
+	align-items: center;
+}
+
+.single-item{
+	max-width: 100vw;
+	}
+
+.single-item img {
+	width: 100%; 
+	margin: auto;
+	object-fit: cover;
+	margin: 0px 11px ;
+	border-radius:20px ;
+	}
+
+.slick-prev{
+	left: 5%;
+    z-index: 300;
+}
+
+.slick-next{
+	right: 5%;
+	z-index: 300;
+}
+
+.slick-prev:before, .slick-next:before{
+	color: #3a3a3a;
+}
+
+
+.single-item slick-initialized slick-slider slick-dotted slick-prev ::before{
+	z-index: 10;
+	color: #3a3a3a;
+	left: 0px;
+}
+
+}
+
+/** -----------------------------------
+    事業について
+-------------------------------------**/
+
+/* 800px以下の画面用スタイル */
+@media screen and (max-width: 800px) {
+    #business .content-item {
+    flex-direction: column; 
+    max-width: 100%;
+    max-height: none;
+    align-items: flex-start;
+	border-radius: 20px 20px 0px 0px;
+	margin-top: 11%;
+    }
+
+    .content-item img {
+    max-width: 100%; 
+    border-radius: 20px 20px 0 0; 
+    }
+
+    #business .text {
+    padding: 8%; 
+    }
+}
+
+@media screen and (max-width: 800px) {
+	.col-4 .item {
+		width: 100%;
+		margin-top: 11%;
+		}
+
+	#member .medium {
+	text-align: left;	
+	}
+		
+	#member.card {
+	height: 100%;
+	background-color: #fff;
+	border: 0.5px solid;
+	border-color:  #80786b80;
+	border-radius: 10px 10px 0px 0px;
+	box-shadow: 4px 0px 4px #80786b40;	
+	}
+	
+	.card-img img {
+	width: 100%;
+	object-fit: cover;
+	border-radius: 10px 10px 0 0;
+	align-items: center;
+	}
+	
+	#member.card .card-text {
+	padding: 8%;
+	}
+
+	}
+
+@media screen and (max-width:800px){
+	#enviroment p.small{
+	padding-top: 5%;	
+	}
+	#enviroment .icon img{
+	width: 50%;
+	}
+}
+
+@media screen and (max-width:500px){
+	#enviroment .icon img{
+	width: 62%;
+	}
+}
+
+@media screen and (max-width:800px){
+	#personality .col-2 {
+	display:flex
+}
+.personality-item{
+	margin-top: 10%;
+}
+}
+
+
+@media screen and (max-width:500px){
+	#personality{
+		padding-top: 22%;
+		padding-bottom: 23.5%;
+		}
+
+	#personality .col-2{
+		display: block;
+		}
+
+	.col-2 .personality-item{
+		width: 100%;
+		align-items:center;
+		text-align: center;
+        margin: 0 auto;
+	}
+	
+	.personality-item img {
+		width: 80%;
+		padding-top: 11%;
+		padding-bottom: 16%;
+	}
+
+	#personality .small{
+		font-family: "Noto Sans JP", serif;
+		color:#3a3a3a;
+		font-size: 14px;
+		margin-bottom: 5%;
+	}
+}
+
+
+@media screen and (max-width:800px){
+
+#recruit h3.copy_title-text span{
+	display: inline;
+}
+
+#recruit h3.copy_title-text{
+	text-align: left;
+}
+.col-2 .recruit_item{
+	display: block;
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+	}
+
+.recruit_item img{
+	width: 100%;
+	object-fit: contain;
+	border-radius:20px;
+	margin-top: 9%	;
+}
+#recruit .content{
+	font-size: 16px;
+	letter-spacing: 0.1em;
+}
+}
+
+@media screen and (max-width:400px){
+.accordion summary::before,
+.accordion summary::after {
+  width: 3px;
+  height: 0.9em;
+  border-radius: 5px;
+  background-color: #333333b3;
+  content: '';
+  position: absolute;
+  right: 2em; 
+  bottom: 1.5em;
+}
+
+.accordion summary::before {
+  rotate: 90deg;
+}
+
+.accordion summary::after {
+  rotate: 0deg; /* 初期状態で水平に設定 */
+  transition: rotate 0.3s;
+}
+
+.accordion[open] summary::after {
+  rotate: 90deg; /* 開いたときの回転角度 */
+}
+
+}
+
+
+
+@media screen and (max-width:800px){
+
+#entry {
+	padding: 0%;
+	width: 100vw;
+	height: 51vh;
+	background-image: url(../images/entry_sp_img.jpg);
+	background-size: cover;
+	background-position: center;
+	object-fit: contain;
+	background-repeat: no-repeat;
+}
+
+#entry .message{
+	font-size: 18px;
+	line-height: 1.8;
+	letter-spacing: 0.18em;
+	text-align: center;
+	padding-top: 17%;
+	margin: 0 10%;
+}
+
+#entry p.message span {
+    display: inline;
+}
+
+
+#footer{
+	padding: 15% 0 23.5% 0;
+}
+
+.footer-link li {
+	margin: 0, auto;
+	padding-top: 2%;
+	display: block;
+	border-left: none; 
+}
+}
+
+
+@media screen and (max-width:500px){
+
+	#entry {
+		padding: 0%;
+		width: 100vw;
+		height: 51vh;
+		background-image: url(../images/entry_sp_img.jpg);
+		background-size: cover;
+		background-position: center;
+		object-fit: contain;
+		background-repeat: no-repeat;
+	}
+	
+	#entry .message{
+		font-size: 16px;
+		line-height: 1.75;
+		letter-spacing: 0.15em;
+		text-align: left;
+		padding-top: 13%;
+		margin: 0 10%;
+	}
+	
+	#entry p.message span {
+		display: inline;
+	}
+
+}
+
+
+
+
+
+
